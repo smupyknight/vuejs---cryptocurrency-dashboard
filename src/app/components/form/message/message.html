@@ -1,0 +1,12 @@
+<div
+  v-if="error || success || warning"
+>
+  <br>
+  <el-alert
+    :title="error || success || warning"
+    :type="type"
+    :closable="false"
+    :show-icon="true">
+  </el-alert>
+  <br>
+</div>

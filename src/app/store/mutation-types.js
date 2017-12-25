@@ -1,0 +1,5 @@
+// Auth
+export const CHECK_AUTHENTICATION = 'CHECK_AUTHENTICATION';
+export const LOGOUT = 'LOGOUT';
+export const LOGIN = 'LOGIN';
+export const UPDATE_REFRESHING = 'UPDATE_REFRESHING';

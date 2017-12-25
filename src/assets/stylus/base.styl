@@ -1,0 +1,24 @@
+
+@import "_settings.styl";
+@import "_helpers.styl";
+
+html,
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: regular_font;
+}
+  a {
+    color: color_anchor;
+    text-decoration: none;
+    opacity: 0.8;
+    -webkit-transition: color animation_speed; /* For Safari 3.1 to 6.0 */
+    transition: color animation_speed;
+    &:hover{
+      color: hover_anchor;
+    }
+  }
+.content{
+  width:100%;
+  height: 100%;
+}

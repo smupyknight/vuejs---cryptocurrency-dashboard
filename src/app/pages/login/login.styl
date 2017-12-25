@@ -1,0 +1,112 @@
+@import "../../../assets/stylus/_settings.styl";
+
+.loginPageContent {
+
+  .logo{
+    width: 261px;
+    height: 65px;
+    position: absolute;
+    left: 31px;
+    top: 23px;
+    background-image: url('../../../assets/images/logo.png');
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+
+  .titleForm{
+    font-size: 27px;
+    text-align: left;
+    color: #fff;
+  }
+  .login-wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url('../../../assets/images/login_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .login_box {
+      width 285px;
+      padding: 41px;
+      margin-right: 47px;
+        input{
+          color #fff;
+          background: transparent;
+        }
+        .forget_password_button{
+          color: #6daeff;    position: relative;
+          top: -14px;
+          left: 24px;
+
+        }
+        .el-button{
+          position: relative;
+          top: 26px;
+        }
+    }
+  }
+
+  .register-wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('../../../assets/images/register_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .titleForm{
+      color: black;
+    }
+      input{
+        color black;
+        background: transparent;
+      }
+      .agreeCheckBox{
+        font-size: 12px;
+        position: relative;
+        bottom: 37px;
+        .el-checkbox{
+          margin-right: 13px;
+        }
+      }
+      .register_box {
+        width 285px;
+        padding: 41px;
+        margin-left: 47px;
+        margin-top: 127px;
+        .el-button{
+          position: relative;
+          top: 44px;
+        }
+      }
+
+  }
+
+  .el-button{
+    float: left;
+    width: 118px;
+    border-radius: 22px;
+  }
+
+  .el-input__inner{
+    border-left none;
+    border-right none;
+    border-top none;
+    border-radius 0px;
+  }
+
+}
+
+@media(max-width desktop-breakpoint) {
+  .login-wrapper {
+    justify-content center !important
+    background-image: url('../../../assets/images/background_login_mobile.png') !important;
+  }
+  .register-wrapper {
+    justify-content center !important
+  }
+}
+
+

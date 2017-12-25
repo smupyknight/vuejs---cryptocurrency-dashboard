@@ -1,0 +1,32 @@
+<div class="content el-row loginPageContent">
+    <div class="logo">
+
+    </div>
+    <el-col class="login-wrapper" :sm="12"  :xs="24" :lg="12" :md="12">
+                <div class="login_box">
+                    <p class="titleForm">Login</p>
+                    <formv
+                            :save="login"
+                            :form="form"
+                            btn-text="Login"
+                    >
+                    </formv>
+                    <router-link class="forget_password_button" :to="{ name: 'login'}">forget password?</router-link>
+                </div>
+        </el-row>
+    </el-col>
+    <el-col class="register-wrapper"  :md="12" :sm="12" :xs="24" :lg="12">
+        <div class="register_box">
+            <p class="titleForm">Register</p>
+            <formv
+                                :save="register"
+                                :form="form_register"
+                                btn-text="Register"
+                        >
+            </formv>
+            <el-col :md="24" class="agreeCheckBox">
+                <el-checkbox ></el-checkbox>Agree to Yallabit <router-link :to="{name: 'login'}">Terms Of Use</router-link> & <router-link :to="{name: 'login'}">Privacy Policy</router-link>
+            </el-col>
+            </div>
+    </el-col>
+</div>

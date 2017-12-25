@@ -1,0 +1,90 @@
+<div class="container">
+    <header class="header">
+        <div class="header__logo--wrapper">
+            <img class="header__logo" src="src/img/yallaBitLogo.png">
+        </div>
+        <div class="header__search">
+            <div class="header__search--wrapper">
+                <input class="header__search__input" id="search" type="text" placeholder="Search...">
+                <label for="search"></label>
+            </div>
+        </div>
+        <div class="header__profile">
+            <span class="header__profile__question"></span>
+            <span class="header__profile__headphones"></span>
+            <span class="header__profile__notifications">
+          <div class="header__profile__notifications__count">5</div>
+        </span>
+        </div>
+        <div class="header__profileMenu">
+            <img src="">
+            <p>Johanna Doyle</p>
+            <span class="header__profileMenu__arrow"></span>
+        </div>
+    </header>
+    <div class="container__content">
+        <nav class="container__nav">
+            <ul class="pageList">
+                <li class="pageList__page">
+                    <div>
+                        <img class="pageList__page__icon" src="src/img/navPanel/icon1.png">
+                        Dashboard
+                    </div>
+                </li>
+                <li class="pageList__page">
+                    <div>
+                        <img class="pageList__page__icon" src="src/img/navPanel/icon2.png">
+                        Order History
+                    </div>
+                </li>
+                <li class="pageList__page list">
+                    <div>
+                        <img class="pageList__page__icon" src="src/img/navPanel/icon3.png">
+                        Security
+                    </div>
+                    <ul class="pageList__subPages">
+                        <li class="pageList__subPages__page">
+                            <img class="pageList__page__icon" src="src/img/navPanel/icon10.png">
+                            Two-Factor Authentication
+                        </li>
+                    </ul>
+                </li>
+                <li class="pageList__page list">
+                    <div>
+                        <img class="pageList__page__icon" src="src/img/navPanel/icon5.png">
+                        Settings
+                    </div>
+                    <ul class="pageList__subPages">
+                        <li class="pageList__subPages__page">
+                            <img class="pageList__page__icon" src="src/img/navPanel/icon11.png">
+                            Change Password
+                        </li>
+                        <li class="pageList__subPages__page">
+                            <img class="pageList__page__icon" src="src/img/navPanel/icon7.png">
+                            Notifications
+                            <span class="pageList__subPages__page__notifications">
+                  5
+                </span>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pageList__page">
+                    <div>
+                        <img class="pageList__page__icon" src="src/img/navPanel/icon8.png">
+                        Support
+                    </div>
+                </li>
+                <li class="pageList__page">
+                    <div>
+                        <img class="pageList__page__icon" src="src/img/navPanel/icon9.png">
+                        Verify Account
+                    </div>
+                </li>
+            </ul>
+            <span class="container__nav__logOut">
+          <img src="src/img/logout.png">Log Out
+        </span>
+        </nav>
+    </div>
+    <router-view/>
+</div>
